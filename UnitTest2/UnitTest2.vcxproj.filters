@@ -15,25 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArithmeticProgression.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="progression.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="UnitTest2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeometricProgression.h">
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ArithmeticProgression.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeometricProgression.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>

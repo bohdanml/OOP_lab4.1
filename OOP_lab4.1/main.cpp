@@ -1,5 +1,6 @@
 #include <iostream>
-#include "progression.h"
+#include "ArithmeticProgression.h"
+#include "GeometricProgression.h"
 
 int main() {
     Progression* progressions[2];
