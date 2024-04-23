@@ -9,4 +9,5 @@ private:
 public:
     GeometricProgression(double first_term, double common_ratio);
     double element_progression(int n) override;
+    std::string type() const override;
 };

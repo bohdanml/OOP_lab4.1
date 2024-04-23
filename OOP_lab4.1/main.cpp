@@ -1,4 +1,5 @@
 #include <iostream>
+#include <typeinfo> 
 #include "ArithmeticProgression.h"
 #include "GeometricProgression.h"
 
@@ -9,13 +10,9 @@ int main() {
     progressions[1] = new GeometricProgression(1, 2);
 
     for (int i = 0; i < 2; ++i) {
-        std::cout << "Progression type: ";
-        if (dynamic_cast<ArithmeticProgression*>(progressions[i])) {
-            std::cout << "Arithmetic" << std::endl;
-        }
-        else if (dynamic_cast<GeometricProgression*>(progressions[i])) {
-            std::cout << "Geometric" << std::endl;
-        }
+        std::cout << "Progression type: " << progressions[i]->type() << std::endl;
+        std::cout << "Real type of object " << i + 1 << ": " << typeid(*progressions[i]).name() << std::endl;
+
         for (int j = 0; j < 5; ++j) {
             std::cout << "Element " << j << ": " << progressions[i]->element_progression(j) << std::endl;
         }
