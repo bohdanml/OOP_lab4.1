@@ -1,5 +1,5 @@
 #include <iostream>
-#include <typeinfo> 
+#include <typeinfo>
 #include "ArithmeticProgression.h"
 #include "GeometricProgression.h"
 

@@ -135,6 +135,7 @@
     <ClCompile Include="GeometricProgression.cpp" />
     <ClCompile Include="GeometricProgression.h" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="progression.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,13 +1,11 @@
 #include "GeometricProgression.h"
-
 #include <cmath>
-#include <typeinfo> 
 
-GeometricProgression::GeometricProgression(double first_term, double common_ratio)
-    : first_term(first_term), common_ratio(common_ratio) {}
+GeometricProgression::GeometricProgression(double first_term, double common_difference)
+    : Progression(first_term, common_difference) {}
 
 double GeometricProgression::element_progression(int n) {
-    return first_term * pow(common_ratio, n - 1);
+    return first_term * pow(common_difference, n - 1);
 }
 
 std::string GeometricProgression::type() const {
